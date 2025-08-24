@@ -161,7 +161,7 @@ def main():
         for (j,k), v in np.ndenumerate(mat):
             ax.text(k, j, str(int(v)), ha="center", va="center")
     plt.tight_layout()
-    fig_path = os.path.join(out_dir, "multilabel_confusion_matrix.png")
+    fig_path = os.path.join(out_dir, "confusion_matrix.png")
     plt.savefig(fig_path, dpi=200)
     print(f"[Saved] {fig_path}")
 
